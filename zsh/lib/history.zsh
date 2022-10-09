@@ -1,7 +1,7 @@
 ## zsh history config. based on oh my zsh /lib/history
 ## called from .zshrc
 
-HISTFILE=$HOME/.zcache/.zsh_history
+HISTFILE=$ZSH_CACHE/zsh_history
 HISTSIZE=50000
 SAVEHIST=10000
 

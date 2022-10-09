@@ -5,20 +5,20 @@
 
 # Path to your ZSH config directory (dotfiles,zcache,cdr-cache,history,zcompdump
 # themes,plugins,lib)
-export ZSH_CONFIG=$HOME/.zsh
+export ZSH_CONFIG=$HOME/.dotfiles/zsh
 export ZSH_THEMES=$ZSH_CONFIG/themes
 export ZSH_PLUGINS=$ZSH_CONFIG/plugins
 export ZSH_LIB=$ZSH_CONFIG/lib
-export ZSH_CACHE=$HOME/.zcache
+export ZSH_CACHE=$HOME/.dotfiles/zcache
 export ZSH_THEMES=$ZSH_CONFIG/themes
 export ZSH_3PC=$ZSH_CONFIG/3pc
 
  #Check config directory paths.
-if [ ! -d $ZSH_CONFIG ];then mkdir ~/.zsh;fi
-if [ ! -d $ZSH_THEMES ];then mkdir ~/.zsh/themes;fi
-if [ ! -d $ZSH_PLUGINS ];then mkdir ~/.zsh/plugins;fi
-if [ ! -d $ZSH_LIB ];then mkdir ~/.zsh/lib;fi
-if [ ! -d $ZSH_CACHE ];then mkdir ~/.zcache;fi
+if [ ! -d $ZSH_CONFIG ];then mkdir $ZSH_CONFIG;fi
+if [ ! -d $ZSH_THEMES ];then mkdir $ZSH_THEMES;fi
+if [ ! -d $ZSH_PLUGINS ];then mkdir $ZSH_PLUGINS;fi
+if [ ! -d $ZSH_LIB ];then mkdir $ZSH_LIB;fi
+if [ ! -d $ZSH_CACHE ];then mkdir $ZSH_CACHE;fi
 
 # add functions paths
 # may have to add individual plugins refer to omzsh.sh file for inspiration.
@@ -28,7 +28,7 @@ if [ ! -d $ZSH_CACHE ];then mkdir ~/.zcache;fi
 # Load all stock functions (from $fpath files) called below.
 autoload -U compaudit compinit
 
-compinit -u -C -d $ZSH_CACHE/.zcompdump
+compinit -u -C -d $ZSH_CACHE/zcompdump
 
 # Source lib starts here
 source $ZSH_LIB/completion.zsh
