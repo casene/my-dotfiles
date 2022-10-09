@@ -9,7 +9,7 @@ export ZSH_CONFIG=$HOME/.dotfiles/zsh
 export ZSH_THEMES=$ZSH_CONFIG/themes
 export ZSH_PLUGINS=$ZSH_CONFIG/plugins
 export ZSH_LIB=$ZSH_CONFIG/lib
-export ZSH_CACHE=$HOME/.dotfiles/zcache
+export ZSH_CACHE=$HOME/.dotfiles/zsh/zcache
 export ZSH_THEMES=$ZSH_CONFIG/themes
 export ZSH_3PC=$ZSH_CONFIG/3pc
 
