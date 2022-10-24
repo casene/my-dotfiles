@@ -20,7 +20,7 @@ if [ ! -d $ZSH_PLUGINS ];then mkdir $ZSH_PLUGINS;fi
 if [ ! -d $ZSH_LIB ];then mkdir $ZSH_LIB;fi
 if [ ! -d $ZSH_CACHE ];then mkdir $ZSH_CACHE;fi
 
-# add functions paths
+## add functions paths
 # may have to add individual plugins refer to omzsh.sh file for inspiration.
 # allplugins must be added to fpath before running compinit
 ## fpath=($ZSH_PLUGINS $fpath)
