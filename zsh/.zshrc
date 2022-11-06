@@ -1,7 +1,7 @@
 ## my zsh-config.
 ## based on oh my zsh configs.
 ## this is a modular approach so the .zshrc file will mainly call other .zsh configs.
-
+## updated 2022 - paths addedd/deleted
 
 # Path to your ZSH config directory (dotfiles,zcache,cdr-cache,history,zcompdump
 # themes,plugins,lib)
