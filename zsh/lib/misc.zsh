@@ -15,7 +15,5 @@ setopt long_list_jobs
 setopt interactivecomments
 
 # taken from omz /lib/theme-and-appearance.zsh
-# Perform implicit tees or cats when multiple redirections are attempted.
-setopt multios
-
-
+# Disable implicit tees or cats when multiple redirections are attempted.
+setopt nomultios

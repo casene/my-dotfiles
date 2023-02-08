@@ -1,4 +1,4 @@
-## zsh completion config. based on oh my zsh /lib/completion.
+## zsh completion config.
 ## called from .zshrc
 
 # load the complist module (*)
@@ -18,12 +18,6 @@ setopt always_to_end
 
 # zstyle menu completion style (*)
 zstyle ':completion:*:*:*:*:*' menu select
-
-## zstyle case sensitive completion
-# zstyle ':completion:*' matcher-list 'r:|=*' 'l:|=* r:|=*'
-
-## zstyle hyphen insensitive completion
-# zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|=*'
 
 ## zstyle case insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
